@@ -1,6 +1,6 @@
 module Appointments
     class InstallGenerator < Rails::Generators::Base
-      source_root File.expand_path("../templates", __FILE__)
+      source_root File.expand_path("../../templates", __FILE__)
 
       desc "Creates an appointment initializer and copies locale files to your application."
       class_option :orm
