@@ -5,13 +5,17 @@ module Appointments
       desc "Creates an appointment initializer and copies locale files to your application."
       class_option :orm
       
-      def add_captivate_routes
+      def add_routes
         resources = "resources :appointments"
         route resources
       end
       
       def add_model
         template "appointment.rb", "app/models/appointment.rb"
+      end
+      
+      def add_controller
+        template "appointments_controller.rb", "app/controllers/appointments_controller.rb"
       end
       
       def add_view
@@ -21,10 +25,6 @@ module Appointments
       def add_stub_view
         template "match_dates.html.erb", "app/views/appointments/match_dates.html.erb"
       end 
-      
-      def add_controller
-        template "appointments_controller.rb", "app/controllers/appointments_controller.rb"
-      end
       
       def add_javascripts
         template "jquery.ui.datepicker.min.js", "public/jquery.ui.datepicker.min.js"
