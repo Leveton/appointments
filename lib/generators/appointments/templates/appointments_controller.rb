@@ -20,14 +20,14 @@ def new
 def create
    @appointment = Appointment.create(params[:appointments])
     if @appointment.save
-      redirect_to root_path
+      redirect_to new_appointment_path
     else
       err = ''
       @appointment.errors.full_messages.each do |m|
       err << m
     end
 
-      redirect_to root_path, :flash => { :alert => "#{err}, please try again" }
+      redirect_to new_appointment_path, :flash => { :alert => "#{err}, please try again" }
     end
   end
 end
