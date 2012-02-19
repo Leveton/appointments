@@ -29,6 +29,7 @@ module Appointments
       def add_javascripts
         template "jquery.ui.datepicker.min.js", "public/jquery.ui.datepicker.min.js"
         template "jquery.ui.widget.min.js", "public/jquery.ui.widget.min.js"
+        template "appointment.js", "public/appointment.js"
       end
       
       def add_stylesheets

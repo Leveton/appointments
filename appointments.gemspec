@@ -2,7 +2,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "appointments"
-  s.version     = "1.2.6"
+  s.version     = "1.2.7"
   s.platform    = Gem::Platform::RUBY
   s.summary     = "Schedule appointments with Rails 3 and the jQuery-UI"
   s.email       = "mleveton@prepcloud.com"
