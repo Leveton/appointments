@@ -6,7 +6,7 @@ http://rubygems.org/gems/appointments
 
 == SYNOPSIS:
 
-  Uses the jQuery UI datepicker and ActiveRecord to allow users to choose a date and then match the hours belonging to that date with hours that have already been scheduled.  See the tutorial for more info http://leveton.wordpress.com/2012/02/19/schedule-appointments-with-rails3-and-jquery/
+Uses the jQuery UI datepicker and ActiveRecord to allow users to choose a date and then match the hours belonging to that date with hours that have already been scheduled.  See the tutorial for more info http://leveton.wordpress.com/2012/02/19/schedule-appointments-with-rails3-and-jquery/
 
 == REQUIREMENTS:
 
