@@ -1,0 +1,54 @@
+= appointments
+
+Schedule appointments with Rails 3 and the jQuery-UI
+
+http://rubygems.org/gems/appointments
+
+== SYNOPSIS:
+
+  Uses the jQuery UI datepicker and ActiveRecord to allow users to choose a date and then match the hours belonging to that date with hours that have already been scheduled.  See the tutorial for more info http://leveton.wordpress.com/2012/02/19/schedule-appointments-with-rails3-and-jquery/
+
+== REQUIREMENTS:
+
+  Rails 3.0+
+
+== INSTALL:
+
+<i>Ensure that you call '//= require jquery-ui' in your application.js file</i>
+
+run:
+
+<b>gem install appointments</b>
+
+Add the gem to your gemfile.
+
+If you want all the files pre-installed, then run the generator:
+
+<b>rails generate appointments:install</b>
+
+This will install the necessary model, view, and controller files
+
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2012 FIX
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
