@@ -1,6 +1,6 @@
 class AppointmentsController < ApplicationController
 
-def match_dates
+def index
   date_from_ajax = params[:matched_date]
   reduce = Appointment.where(:date => date_from_ajax)
   hour_on_date = reduce.collect {|x| x.hour}

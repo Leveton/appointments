@@ -7,9 +7,7 @@ module Appointments
       
       def add_captivate_routes
         resources = "resources :appointments"
-        match_dates = "match 'appointments/match_dates' => 'appointments#match_dates'"
         route resources
-        route match_dates
       end
       
       def add_model
