@@ -23,7 +23,7 @@ module Appointments
       end 
       
       def add_stub_view
-        template "match_dates.html.erb", "app/views/appointments/match_dates.html.erb"
+        template "index.html.erb", "app/views/appointments/index.html.erb"
       end 
       
       def add_javascripts
