@@ -32,7 +32,7 @@ This will install the necessary model, view, and controller files
 
 (The MIT License)
 
-Copyright (c) 2012 FIX
+Copyright (c) 2012 Michael Leveton
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
