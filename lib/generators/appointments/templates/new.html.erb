@@ -53,7 +53,7 @@
 <div id='cal_previous2'><button class='btn' onclick='prevPage();'>back</button></div><br />
 
             <div id="appointment_form">
-              <%%=form_tag(@appointments) %>
+              <%%= form_tag("/appointments", :method => "post") do %>
                             
                             <br />
                             <label for="appointments_date">scheduled date</label><br /><br />
@@ -69,6 +69,9 @@
                             <br />
 
                             <input type="submit" name="btn" value="Submit" class = 'btn' id="subData" style="display:none;">
+                            
+                             <%%= submit_tag("Submit") %>
+               <%% end %>
 
 </div>
       
