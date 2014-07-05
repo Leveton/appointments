@@ -3,19 +3,18 @@ class AppointmentsController < ApplicationController
 def index
   date_from_ajax = params[:matched_date]
   reduce = Appointment.where(:date => date_from_ajax)
-  hour_on_date = reduce.collect {|x| x.hour}
-  @new_dates = hour_on_date
-  render :layout => false
+  @new_dates = reduce.collect {|x| x.hour}
+  render json: @new_dates
 end
 
 def new
   @appointments = Appointment.create
-    respond_to do |format|
-      format.html
-      format.js
-      end
-   end
- 
+  respond_to do |format|
+    format.html
+    format.js
+  end
+end
+
 
 def create
    @appointment = Appointment.create(params[:appointments])

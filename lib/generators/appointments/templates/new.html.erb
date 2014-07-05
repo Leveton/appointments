@@ -54,14 +54,14 @@
 
             <div id="appointment_form">
               <%%= form_tag("/appointments", :method => "post") do %>
-                            
+
                             <br />
                             <label for="appointments_date">scheduled date</label><br /><br />
                             <div id = "final_date"><h2></h2></div>
                             <input id="schedules_date" name="appointments[date]" type="hidden" />
                             <br />
                             <br />
-                            
+
                             <label for="appointments_hour">scheduled hour</label><br /><br />
                             <div id = "final_hour"><h2></h2></div>
                             <input id="appointments_hour" name="appointments[hour]" type="hidden" />
@@ -69,13 +69,11 @@
                             <br />
 
                             <input type="submit" name="btn" value="Submit" class = 'btn' id="subData" style="display:none;">
-                            
+
                              <%%= submit_tag("Submit") %>
                <%% end %>
 
 </div>
-      
-<div id = "hidden_hour_div"></div>  
 
 	<script src="/jquery.ui.widget.min.js"></script>
 	<script src="/jquery.ui.datepicker.min.js"></script>
